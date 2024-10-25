@@ -19,12 +19,14 @@ internal class Scene2_Manager : MonoBehaviour
     {
         dataIO = new();
         dataIO.SaveData(isNewSave);
+        dataIO = null;
     }
 
     private void LoadSceneData()
     {
         dataIO = new();
         dataIO.LoadData();
+        dataIO = null;
     }
 
 

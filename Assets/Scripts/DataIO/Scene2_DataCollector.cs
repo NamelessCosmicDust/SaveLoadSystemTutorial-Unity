@@ -1,4 +1,6 @@
 
+using System.Linq;
+
 internal class Scene2_DataCollector
 {
     private readonly Scene2_Manager scene2_Manager;
@@ -13,6 +15,16 @@ internal class Scene2_DataCollector
     {
         get
         {
+            // Example: Data validation for values
+            //if (scene2_Manager)
+            //{
+            //    scene2_Manager.data1.intData =
+            //         scene2_Manager.data1.intData.
+            //         Select(x => x > 100 ? 100 : x).ToList();
+                
+            //    return scene2_Manager.data1;
+            //}
+
             if (scene2_Manager) return scene2_Manager.data1;
             else return null;
         }
